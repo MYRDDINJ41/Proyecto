@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <title>Proyecto</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="scripts/dom.js"></script>
 </head>
-<body>
+<body onload="borrar()">
     <div class="header">
         <h2>Compra de tecnologia</h2>
         <div>
-            <input id="carrito" type="text" name="">
+            <input id="carrito" type="text" value="0">
             <img id="carrito2" src="images/Carrito/carrito.png">
         </div>
         <ul class="nav">
-            <li><a href="file:///C:/Users/super/Documents/HTML%205/proyecto/index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Condicion</a>
                 <ul>
                     <li><a href="#" class = "asd" onclick="nuev();">Nuevo</a></li>
@@ -38,6 +39,9 @@
             </li>
         </ul>
     </div>
+    <div>
+        <button id="btn_pagar" onclick="pagar()">Ir al carrito</button>
+    </div>
     <div class="section"><br><br>
         <table border="1"><br><br>
             <thead>
@@ -45,7 +49,7 @@
             </thead>
             <tbody>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo0">
                     <h2><center id="condi0">*NUEVO</center></h2>
                     <center>HUAWEI Y9 PRIME (MIDNIGHT BLACK)<br><br>
                     <img id="imagen" onclick="ima1();" ondblclick="imag1();" src="images/Celucos/HUAWEI Y9 PRIME (MIDNIGHT BLACK).jpg" width="230" height="250"><br>
@@ -90,9 +94,9 @@
                        **Los espacios para Dual SIM varían según el modelo del celular. Algunos solo poseen 2 ranuras o slots, los cuales el cliente puede utilizar para instalar 2 SIMCARD de sus operadores preferidos, o 1 para su SIMCARD y el otro para la memoria expandible.<br>
                        Garantía de Fabricante (Meses):  12</p></details><br>
                        <h1><center id="precio0">200</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car0();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo1">
                     <h2><center id="condi1">*NUEVO</center></h2>
                     <center>Celular Libre Panasonic Gd100s Radio Fm Linterna Dual Sim 2g<br><br>
                     <img id="imagen2" onclick="ima2();" ondblclick="imag2();" src="images/Celucos/Celular Libre Panasonic Gd100s Radio Fm Linterna Dual Sim 2g.png"  width="230" height="250"><br>
@@ -112,9 +116,9 @@ Vibración
 Cargador micro USB
 Memoria interna 32MB</p></details><br> 
                 <h1><center id="precio1">20</center></h1>
-                    <center><button onclick="car();">Agregar al carrito</button></center>
+                    <center><button onclick="car1();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo2">
                     <h2><center id="condi2">*NUEVO</center></h2>
                     <center>Celular Libre Xiaomi Redmi Note 8<br><br>
                     <img id="imagen3" onclick="ima3();" ondblclick="imag3();" src="images/Celucos/Celular Libre Xiaomi Redmi Note 8.png"  width="230" height="250"><br>
@@ -138,9 +142,9 @@ Radio FM: Sí
 Sensores: Huella digital (montada en la parte trasera), acelerómetro, giroscopio, proximidad, brújula.
 Batería: Li-Po no extraíble de 4000 mAh
 Carga: Carga rápida de la batería 18 W (carga rápida 4)</p></details><br> <h1><center id="precio2">170</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car2();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo3">
                     <h2><center id="condi3">*NUEVO</center></h2>
                     <center>Celular Samsung A71 /128gb/ 6ram / 64mp<br><br>
                     <img id="imagen4" onclick="ima4();" ondblclick="imag4();" src="images/Celucos/Celular Samsung A71.png"  width="230" height="250"><br>
@@ -167,9 +171,9 @@ Carga: Carga rápida de la batería 18 W (carga rápida 4)</p></details><br> <h1
 - Wi-Fi, Bluetooth 5.0, GPS,
 - Bateria integrada de 4500 mAh
 -Garantia: 6 meses</p></details><br> <h1><center id="precio3">500</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car3();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td  id ="nuevo">
+                <td  id ="nuevo4">
                     <h2><center id="condi4">*NUEVO</center></h2>
                     <center>Celular Xiaomi Redmi Note 9s /64gb/48mp/4ram<br><br>
                     <img id="imagen5" onclick="ima5();" ondblclick="imag5();" src="images/Celucos/Celular Xiaomi Redmi Note 9s.png" width="230" height="250"><br>
@@ -202,11 +206,11 @@ Carga: Carga rápida de la batería 18 W (carga rápida 4)</p></details><br> <h1
 - Tapa Trasera con acabado en cristal degradado
 -Protección contra las salpicaduras
 -Garantia: 6 meses</p></details><br> <h1><center id="precio4">220</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car4();" id="mm">Agregar al carrito</button></center>
                 </td>
             </tr>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo5">
                     <h2><center id="condi5">*USADO</center></h2>
                     <center>HUAWEI P40 LITE (CRUSH GREEN)<br><br>
                     <img id="imagen6" onclick="ima6();" ondblclick="imag6();" src="images/Celucos/HUAWEI P40 LITE (CRUSH GREEN).jpg" width="230" height="250"><br>
@@ -224,9 +228,9 @@ Carga: Carga rápida de la batería 18 W (carga rápida 4)</p></details><br> <h1
 *CARGA RÁPIDA SI
 *TIPO DE PROCESADOR Kirin810
 *Servicios HMS</p></details><br> <h1><center id="precio5">400</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car5();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo6">
                     <h2><center id="condi6">*NUEVO</center></h2>
                     <center>HUAWEI P40 PRO (SILVER FROST) CON HMS3<br><br>
                     <img id="imagen7" onclick="ima7();" ondblclick="imag7();" src="images/Celucos/HUAWEI P40 PRO (SILVER FROST) CON HMS.jpg" width="230" height="250"><br>
@@ -271,9 +275,9 @@ Zoom óptico 5x
 Zoom digital 50x
 Zoom híbrido 10 x
 Red 5G</p></details><br> <h1><center id="precio6">1100</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car6();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td  id ="nuevo">
+                <td  id ="nuevo7">
                     <h2><center id="condi7">*USADO</center></h2>
                     <center>Celular HUAWEI Y6 2019 - Saphire Blue - 32GB<br><br>
                     <img id="imagen8" onclick="ima8();" ondblclick="imag8();" src="images/Celucos/HUAWEI Y6 2019 (SAPPHIRE BLUE).jpg" width="230" height="250"><br>
@@ -304,9 +308,9 @@ Red 4G/3G/2G
 Conectividad.   4.2
 Numero de espacio para las Sim Card.    Dual SIM
 Dimensiones (Alto x Ancho x Profundo) (Cm ) 15.63 x 7.35 x 0.80</p></details><br> <h1><center id="precio7">130</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car7();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo8">
                     <h2><center id="condi8">*USADO</center></h2>
                     <center>HUAWEI Y7 2019 (AURORA BLUE)<br><br>
                     <img id="imagen9" onclick="ima9();" ondblclick="imag9();" src="images/Celucos/HUAWEI Y7 2019 (AURORA BLUE).jpg" width="230" height="250"><br>
@@ -343,9 +347,9 @@ Resolución de las cámaras traseras 13 Mpx/2 Mpx
 Apertura del diafragma de la cámara trasera f 1.8
 Cantidad de cámaras frontales 1
 Resolución de video de la cámara frontal 1920 px x 1080 px</p></details><br> <h1><center id="precio8">180</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car8();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo9">
                     <h2><center id="condi9">*NUEVO</center></h2>
                     <center>Samsung Galaxy A10<br><br>
                     <img id="imagen10" onclick="ima10();" ondblclick="imag10();" src="images/Celucos/samsung a10.jpg" width="230" height="250"><br>
@@ -381,12 +385,12 @@ Cantidad de cámaras traseras 1
 Apertura del diafragma de la cámara trasera f 1.9
 Cantidad de cámaras frontales 1
 Resolución de video de la cámara frontal 1920 px x 1080 px</p></details><br> <h1><center id="precio9">330</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car9();" id="mm">Agregar al carrito</button></center>
                 </td>
             </tr>
             <th colspan="5">Tablets</th>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo10">
                     <h2><center id="condi10">*NUEVO</center></h2>
                     <center>Apple iPad 32 Gb Wifi Séptima Generación<br><br>
                     <img id="imagen11" onclick="ima11();" ondblclick="imag11();" src="images/Tablets/Apple iPad 32 Gb Séptima Generación.png" width="230" height="250"><br>
@@ -415,9 +419,9 @@ Resolución de la cámara trasera 8 Mpx
 Resolución de video 1080p HD
 Multi-touch Sí
 Micrófono Sí</p></details><br> <h1><center id="precio10">520</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car10()">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo11">
                     <h2><center id="condi11">*USADO</center></h2>
                     <center>Apple iPad Pro 12.9 256 Gigas Ultima Generación 2020 Nuevo<br><br>
                     <img id="imagen12" onclick="ima12();" ondblclick="imag12();" src="images/Tablets/Apple iPad Pro 12.9 Ultima Generación 2020 Nuevo.png" width="230" height="250"><br>
@@ -443,9 +447,9 @@ Resolución de video 1080p HD
 Multi-touch Sí
 Micrófono Sí
 GPS Sí</p></details><br> <h1><center id="precio11">2000</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car11();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo12">
                     <h2><center id="condi12">*USADO</center></h2>
                     <center>Tablet Alcatel 1t7 Wifi Tupccel<br><br>
                     <img id="imagen13" onclick="ima13();" ondblclick="imag13();" src="images/Tablets/Tablet Alcatel 1t7.png" width="230" height="250"><br>
@@ -465,9 +469,9 @@ Conectividad: WiFi; Bluetooth 4.2; toma de auriculares; y microUSB
 Resistencia al agua con equivalencia IP52
 Dimensiones: 189,5 x 111 x 9,15 milímetros
 Peso: 245 gramos</p></details><br> <h1><center id="precio12">85</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car12();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo13">
                     <h2><center id="condi13">*NUEVO</center></h2>
                     <center>Tablet Celular Krono 3g 7031 (1gb Ram,16gb, Dual Sim, Camara<br><br>
                     <img id="imagen14" onclick="ima14();" ondblclick="imag14();" src="images/Tablets/Tablet Celular Krono 3g 7031.png" width="230" height="250"><br>
@@ -499,9 +503,9 @@ Radio FM
 Puerto para audífonos
 Batería De Litio De 3000 Mah
 </p></details><br> <h1><center id="precio13">80</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car13();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo14">
                     <h2><center id="condi14">*NUEVO</center></h2>
                     <center>Tablet Lenovo 10.1 Quadcore 16gb Android 9 Altavoz Dual 2020<br><br>
                     <img id="imagen15" onclick="ima15();" ondblclick="imag15();" src="images/Tablets/Tablet Lenovo 10.1.png" width="230" height="250"><br>
@@ -530,10 +534,10 @@ Batería De Litio De 3000 Mah
 - Peso del producto: 0.84 kg
 - Marca: Lenovo
 </p></details><br> <h1><center id="precio14">240</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car14();" id="mm">Agregar al carrito</button></center>
                 </td>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo15">
                     <h2><center id="condi15">*NUEVO</center></h2>
                     <center>Tablet Lenovo 4g Tab V7 Negro 6,9<br><br>
                     <img id="imagen16" onclick="ima16();" ondblclick="imag16();" src="images/Tablets/Tablet Lenovo Tab V7 Negro.png" width="230" height="250"><br>
@@ -557,9 +561,9 @@ AUDIO: Doble altavoz frontal con certificación Dolby
 SISTEMA OPERATIVO: Android 9.0 Pie
 PUERTOS: USB-C 2.0 y Jack de 3,5 mm
 SEGURIDAD: Sensor de huellas trasero y desbloqueo facial</p></details><br> <h1><center id="precio15">220</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car15();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo16">
                     <h2><center id="condi16">*NUEVO</center></h2>
                     <center>Tablet Lenovo Yoga Smart Yt-x705f 10 Wifi 4gb 64g Android 9<br><br>
                     <img id="imagen17" onclick="ima17();" ondblclick="imag17();" src="images/Tablets/Tablet Lenovo Yoga Smart Yt-x705f 10 Wifi 4gb 64g Android 9.png" width="230" height="250"><br>
@@ -582,9 +586,9 @@ SEGURIDAD: Sensor de huellas trasero y desbloqueo facial</p></details><br> <h1><
 * Cámara frontal 5.0MP FF y trasera 8.0MP AF
 * Speakers 2x2W JBL paper diaphragm Hi-Fi with Dolby Atoms
 * Wireless 802.11 A/B/G/N/AC, Bluetooth 4.2"</p></details><br> <h1><center id="precio16">320</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car16();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo17">
                     <h2><center id="condi17">*USADO</center></h2>
                     <center>Tablet Samsung Galaxy Tab A 8 (2019) Wi Fi - 32 Gb - Negro<br><br>
                     <img id="imagen18" onclick="ima18();" ondblclick="imag18();" src="images/Tablets/Tablet Samsung Galaxy Tab A 8 (2019) Wi Fi - 32 Gb - Negro.png" width="230" height="250"><br>
@@ -608,9 +612,9 @@ Velocidad del procesador: 2 GHz
 Tipo de procesador: Quad-Core
 Capacidad del disco duro: 32 GB
 SKU: SM-T290</p></details><br> <h1><center id="precio17">200</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car17();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo18">
                     <h2><center id="condi18">*NUEVO</center></h2>
                     <center>Tablet Samsung Galaxy Tab A 8 (2019) Lte-4g - 32 Gb<br><br>
                     <img id="imagen19" onclick="ima19();" ondblclick="imag19();" src="images/Tablets/Tablet Samsung Galaxy Tab A 8.png" width="230" height="250"><br>
@@ -634,9 +638,9 @@ Capacidad del disco duro: 32 GB
 Contenido: Tablet
 SKU: SM-T295
 </p></details><br> <h1><center id="precio18">240</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car18();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo19">
                     <h2><center id="condi19">*USADO</center></h2>
                     <center>Tablet Samsung Tab A 10.1 Wifi<br><br>
                     <img id="imagen20" onclick="ima20();" ondblclick="imag20();" src="images/Tablets/Tablet Samsung Galaxy Tab A10.png" width="230" height="250"><br>
@@ -672,13 +676,13 @@ Cantidad de cámaras traseras 1
 Apertura del diafragma de la cámara trasera f 1.9
 Cantidad de cámaras frontales 1
 Resolución de video de la cámara frontal 1920 px x 1080 px</p></details><br> <h1><center id="precio19">420</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car19();" id="mm">Agregar al carrito</button></center>
                 </td>
             </tr>
 
             <th colspan="5">Computadoras</th>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo20">
                     <h2><center id="condi20">*NUEVO</center></h2>
                     <center>Computador Intel Core I7 9700, Ram 8gb, Board Z390p, 750w<br><br>
                     <img id="imagen21" onclick="ima21();" ondblclick="imag21();" src="images/Computadores/Computador Intel Core I7 9700, Ram 8gb, Board Z390p, 750w.png" width="230" height="250"><br>
@@ -696,9 +700,9 @@ Cantidad de subprocesos: 8
 Frecuencia básica del procesador: 3.00 GHz
 Frecuencia turbo máxima: 4.70 GHz
 Fuente: EVGA 750 BQ, 80+ BRONZE 750W, Semi Modular</p></details><br> <h1><center id="precio20">1520</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car20();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo21">
                     <h2><center id="condi21">*NUEVO</center></h2>
                     <center>Computador Hp Intel Core I3 7ma Gen 4gb 1tb<br><br>
                     <img id="imagen22" onclick="ima22();" ondblclick="imag22();" src="images/Computadores/Computador Portatil Hp Core I3 7ma Gen 4gb 1tb Win 10.png" width="230" height="250"><br>
@@ -718,9 +722,9 @@ Resolución: 1366 x 768
 Peso: 1,54kg
 WIFI, Bluetooth
 USB, HDMI, RJ-45, Webcam incorporada</p></details><br> <h1><center id="precio21">600</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car21();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo22">
                     <h2><center id="condi22">*USADO</center></h2>
                     <center>Computador Todo En Uno Lenovo 330 Amd A6 4gb Ddr4 Windows 10<br><br>
                     <img id="imagen23" onclick="ima23();" ondblclick="imag23();" src="images/Computadores/Lenovo 330 Amd A6.png" width="230" height="250"><br>
@@ -737,9 +741,9 @@ S.O: Windows 10
 Conectividad Wi-Fi, Bluetooth
 Color: Blanco
 </p></details><br> <h1><center id="precio22">430</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car22();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo23">
                     <h2><center id="condi23">*NUEVO</center></h2>
                     <center>Pc Gamer Fnatic Ryzen 5 3400g B450m Ssd 240gb Ram 16gb<br><br>
                     <img id="imagen24" onclick="ima24();" ondblclick="imag24();" src="images/Computadores/Pc Gamer Fnatic Ryzen 5 3400g B450m Ssd 240gb Ram 16gb.png" width="230" height="250"><br>
@@ -782,9 +786,9 @@ BOARD GIGABYTE B450M-DS3H:
 -1 x Trusted Platform Module (TPM) header (2x10 pin, for the GC-TPM2.0 module only)
 -1 x serial port header
 -1 x Clear CMOS jumper</p></details><br> <h1><center id="precio23">630</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car23();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo24">
                     <h2><center id="condi24">*NUEVO</center></h2>
                     <center>Portátil Asus 15.6 Anti-reflejo Ryzen5 3500u Quadcore 1 Tr<br><br>
                     <img id="imagen25" onclick="ima25();" ondblclick="imag25();" src="images/Computadores/Portatil Asus 15.6 Anti-reflejo Ryzen 3 12 Ram 1 Tera Huella.png" width="230" height="250"><br>
@@ -813,10 +817,10 @@ BOARD GIGABYTE B450M-DS3H:
 - Batería 2 -Cell 32 Wh Battery
 - Dimensiones 360.2 x 234.9 x 22.9 mm (WxDxH)
 - Peso 1.7kg</p></details><br> <h1><center id="precio24">630</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car24();" id="mm">Agregar al carrito</button></center>
                 </td>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo25">
                     <h2><center id="condi25">*NUEVO</center></h2>
                     <center>Portatil Asus Amd A12 / Quadcore 1tr 12ram 2gb Video Huella<br><br>
                     <img id="imagen26" onclick="ima26();" ondblclick="imag26();" src="images/Computadores/Portatil Asus Amd A12  Quadcore 1tr 12ram 2gb Video Huella.png" width="230" height="250"><br>
@@ -855,9 +859,9 @@ BOARD GIGABYTE B450M-DS3H:
 • Wi-Fi: Si
 • Bluetooth: Si
 • Huella: Si</p></details><br> <h1><center id="precio25">750</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car25();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo26">
                     <h2><center id="condi26">*NUEVO</center></h2>
                     <center>Acer Nitro5 -an515 Core I5 9300h-8 Gb-256 Ssd-gtx 1050-win10<br><br>
                     <img id="imagen27" onclick="ima27();" ondblclick="imag27();" src="images/Computadores/Portatil Gamer Acer Nitro 5 Core I5.png" width="230" height="250"><br>
@@ -880,9 +884,9 @@ TECLADO TIPO CHICLET USA -Retro iluminado
 SISTEMA OPERATIVO: WINDOWS 10
 GARANTIA: 1 AÑO
 </p></details><br> <h1><center id="precio26">1200</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car26();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo27">
                     <h2><center id="condi27">*NUEVO</center></h2>
                     <center>Portatil Gamer Asus 15.6 Ryzen5 16 Ram 512 Ssd 4gb Graficos<br><br>
                     <img id="imagen28" onclick="ima28();" ondblclick="imag28();" src="images/Computadores/Portatil Gamer Asus 15.6 Ryzen5 16 Ram 512 Ssd 4gb Graficos.png" width="230" height="250"><br>
@@ -911,9 +915,9 @@ GARANTIA: 1 AÑO
 - Dimensiones: 360.4 x 262 x 25.8 ~26.8 mm (WxDxH)
 - Peso: 2.2 kg
 - Seguridad: Kensington lock fTPM (Firmware-based Trusted Platform Module)</p></details><br> <h1><center id="precio27">1350</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car27();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo28">
                     <h2><center id="condi28">*NUEVO</center></h2>
                     <center>Portátil Hp Envy 13-aq1001la Intel Core I5 13 Pulgadas Lk503<br><br>
                     <img id="imagen29" onclick="ima29();" ondblclick="imag29();" src="images/Computadores/Portátil HP Envy 13-aq1001la Intel Core i5.png" width="230" height="250"><br>
@@ -944,9 +948,9 @@ UNIDAD ÓPTICA No tiene
 CONECTIVIDAD BLUETOOTH, USB-C, WIFI
 
 Garantía 12 meses</p></details><br> <h1><center id="precio28">1520</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car28();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo29">
                     <h2><center id="condi29">*NUEVO</center></h2>
                     <center>Portátil Lenovo S540-14api Amd R7 Ram 8gb Ssd 256gb W10h 14<br><br>
                     <img id="imagen30" onclick="ima30();" ondblclick="imag30();" src="images/Computadores/Portátil Lenovo S540-14api Amd R7 Ram 8gb Ssd 256gb W10h 14.png" width="230" height="250"><br>
@@ -972,13 +976,13 @@ Garantía 12 meses</p></details><br> <h1><center id="precio28">1520</center></h1
 * Teclado retroiluminado
 * Lector de huellas
 * Wireless WLAN 2x2AC, Bluetooth</p></details><br> <h1><center id="precio29">1200</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car29();" id="mm">Agregar al carrito</button></center>
                 </td>
             </tr>
 
             <th colspan="5">Audifonos</th>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo30">
                     <h2><center id="condi30">*NUEVO</center></h2>
                     <center>Akg Y500 Auriculares Inalambricos Plegables Negro<br><br>
                     <img id="imagen31" onclick="ima31();" ondblclick="imag31();" src="images/Audifonos/Akg Y500 Auriculares Inalambricos Plegables Negro.png" width="230" height="250"><br>
@@ -992,9 +996,9 @@ Garantía 12 meses</p></details><br> <h1><center id="precio28">1520</center></h1
 * carga de batería velocidad de larga duración disfrute de hasta 33 horas de la música que inspira su día con una recarga rápida de 5 minutos puede mantener la música durante una hora adicional
 * velocidad de carga la recarga de 5 minutos agregará otra hora de música para ayudarte a completar tu viaje
 * conectividad multipunto vincula dos dispositivos bluetooth a la vez y tus audífonos cambiarán de manera intuitiva entre los dispositivos</p></details><br> <h1><center id="precio30">160</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car30();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo31">
                     <h2><center id="condi31">*USADO</center></h2>
                     <center>Audífonos Manos Libres Samsung 3.5 Mm<br><br>
                     <img id="imagen32" onclick="ima32();" ondblclick="imag32();" src="images/Audifonos/Audífonos Manos Libres Samsung 3.5 Mm Control Volumen.png" width="230" height="250"><br>
@@ -1016,9 +1020,9 @@ Garantía 12 meses</p></details><br> <h1><center id="precio28">1520</center></h1
 • Longitud del cable: 120 cm.
 • Material de fabricación: Plástico
 </p></details><br> <h1><center id="precio31">11</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car31();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo32">
                     <h2><center id="condi32">*NUEVO</center></h2>
                     <center>Audifonos Samsung Manos Libres Active Fit Deporte S8 S5 J7<br><br>
                     <img id="imagen33" onclick="ima33();" ondblclick="imag33();" src="images/Audifonos/Audifonos Samsung Manos Libres Active Fit Deporte S8 S5 J7.png" width="230" height="250"><br>
@@ -1032,9 +1036,9 @@ Garantía 12 meses</p></details><br> <h1><center id="precio28">1520</center></h1
 * Control de 3 botones
 * Con microfono
 * Incluye Almohadilla (S, M, L) y aletas de sujeción</p></details><br> <h1><center id="precio32">20</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car32();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo33">
                     <h2><center id="condi33">*NUEVO</center></h2>
                     <center>Auricular Samsung Original Manos Libres Samsung<br><br>
                     <img id="imagen34" onclick="ima34();" ondblclick="imag34();" src="images/Audifonos/Auricular Samsung Original Manos Libres Samsung.png" width="230" height="250"><br>
@@ -1051,9 +1055,9 @@ Manos Libres Samsung Original
 Formato del auricular JACK 3.5mm
 
 Micrófono Sí</p></details><br> <h1><center id="precio33">7</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car33();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo34">
                     <h2><center id="condi34">*NUEVO</center></h2>
                     <center>Auriculares Bluetooth Riwbox, Riwbox Ct-7 Oreja De Gato<br><br>
                     <img id="imagen35" onclick="ima35();" ondblclick="imag35();" src="images/Audifonos/Auriculares Bluetooth Riwbox, Riwbox Ct-7 Oreja De Gato.png" width="230" height="250"><br>
@@ -1067,10 +1071,10 @@ Micrófono Sí</p></details><br> <h1><center id="precio33">7</center></h1>
 Bluetooth Sí
 Micrófono Sí
 Respuesta en frecuencia 20 Hz x 20000 Hz</p></details><br> <h1><center id="precio34">70</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car34();" id="mm">Agregar al carrito</button></center>
                 </td>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo35">
                     <h2><center id="condi35">*NUEVO</center></h2>
                     <center>Betron Elr50 Auriculares Auriculares Balanced Bass Driven So<br><br>
                     <img id="imagen36" onclick="ima36();" ondblclick="imag36();" src="images/Audifonos/Betron Elr50 Auriculares Auriculares Balanced Bass Driven So.png" width="230" height="250"><br>
@@ -1097,9 +1101,9 @@ Marca: Betron
 Modelo: earphones
 
 Fabricante: Betron</p></details><br> <h1><center id="precio35">35</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car35();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo36">
                     <h2><center id="condi36">*USADO</center></h2>
                     <center>Edelin Auriculares Bluetooth<br><br>
                     <img id="imagen37" onclick="ima37();" ondblclick="imag37();" src="images/Audifonos/Edelin Auriculares Bluetooth.png" width="230" height="250"><br>
@@ -1114,9 +1118,9 @@ Tiempo de carga: 1,5 Hora Aproximadamente
 Sensibilidad de micrófono: 40±2dB
 Distancia de transmisión: 10m
 Frecuencia inalámbrica: 2 GHZ</p></details><br> <h1><center id="precio36">30</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car36();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo37">
                     <h2><center id="condi37">*USADO</center></h2>
                     <center>Haylou Audifonos Inalámbricos Gt1 Touch Bluetooth 5.0<br><br>
                     <img id="imagen38" onclick="ima38();" ondblclick="imag38();" src="images/Audifonos/Haylou Audifonos Inalámbricos Gt1 Touch Bluetooth 5.0.png" width="230" height="250"><br>
@@ -1138,9 +1142,9 @@ Capacidad de la Batería auricular: 43 mAh.
 Capacidad de la Batería compartimiento de carga: 310 mAh.
 Resistencia al agua: IPX5.
 Peso: 3.9g Super ligero.</p></details><br> <h1><center id="precio37">35</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car37();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo38">
                     <h2><center id="condi38">*NUEVO</center></h2>
                     <center>Manos Libres Audifonos Samsung Akg S8 S9 + Original<br><br>
                     <img id="imagen39" onclick="ima39();" ondblclick="imag39();" src="images/Audifonos/Manos Libres Audifonos Samsung Akg S8 S9.png" width="230" height="250"><br>
@@ -1160,9 +1164,9 @@ Peso: 3.9g Super ligero.</p></details><br> <h1><center id="precio37">35</center>
 -Longitud del cable1.2 m
 -Colores: Titanium Gray
 </p></details><br> <h1><center id="precio38">15</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car38();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo39">
                     <h2><center id="condi39">*USADO</center></h2>
                     <center>Mpow H7 Auriculares Bluetooth Sobre La Oreja Auriculares Ina<br><br>
                     <img id="imagen40" onclick="ima40();" ondblclick="imag40();" src="images/Audifonos/Mpow H7 Auriculares Bluetooth Sobre La Oreja Auriculares Ina.png" width="230" height="250"><br>
@@ -1185,12 +1189,12 @@ Bluetooth Sí
 Micrófono Sí
 Unidad de diafragma 40 mm
 Duración de la batería 18 h</p></details><br> <h1><center id="precio39">42</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car39();" id="mm">Agregar al carrito</button></center>
                 </td>
             </tr>
             <th colspan="5">Televisores</th>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo40">
                     <h2><center id="condi40">*NUEVO</center></h2>
                     <center>Caixun CX50F2UMS<br><br>
                     <img id="imagen41" onclick="ima41();" ondblclick="imag41();" src="images/Televisores/Caixun CX50F2UMS.png" width="230" height="250"><br>
@@ -1240,9 +1244,9 @@ TDT
 SI
 TIPO PANTALLA
 LED</p></details><br> <h1><center id="precio40">400</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car40();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo41">
                     <h2><center id="condi41">*NUEVO</center></h2>
                     <center>caixun CX5819NUHD<br><br>
                     <img id="imagen42" onclick="ima42();" ondblclick="imag42();" src="images/Televisores/caixun CX5819NUHD.png" width="230" height="250"><br>
@@ -1266,9 +1270,9 @@ CPU: A53 Quad Core 1008MHz
 GPU: Quad core Mali450
 Memoria: 1GB incorporada Almacenamiento externo: 8GB
 Conectividad HDMI: 3 USB: 2 AV IN YPbPr: 1 VGA (D-Sub 15pin): 1 Audio PC: 1 COAXIAL: 1 RJ45: 1 Salida de auricular: 1</p></details><br> <h1><center id="precio41">500</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car41();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo42">
                     <h2><center id="condi42">*USADO</center></h2>
                     <center>Exclusiv EL32P28SM<br><br>
                     <img id="imagen43" onclick="ima43();" ondblclick="imag43();" src="images/Televisores/Exclusiv EL32P28SM.png" width="230" height="250"><br>
@@ -1299,9 +1303,9 @@ Conectividad HDMI: 3 USB: 2 AV IN YPbPr: 1 VGA (D-Sub 15pin): 1 Audio PC: 1 COAX
 - Control Remoto: Si
 - Baterías: XXX X 2
 - Garantía: 12 meses</p></details><br> <h1><center id="precio42">170</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car42();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo43">
                     <h2><center id="condi43">*USADO</center></h2>
                     <center>Hyundai HYLED3238D<br><br>
                     <img id="imagen44" onclick="ima44();" ondblclick="imag44();" src="images/Televisores/Hyundai HYLED3238D.png" width="230" height="250"><br>
@@ -1329,9 +1333,9 @@ Entradas totales de HDMI : 4 (2 laterales y 2 posteriores)
 HDCP : HDCP2.2 (para HDMI™1/2/3/4)
 HDMI-CEC : Sí
 MHL : No</p></details><br> <h1><center id="precio43">140</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car43();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo44">
                     <h2><center id="condi44">*NUEVO</center></h2>
                     <center>Kalley 32HDSFBT<br><br>
                     <img id="imagen45" onclick="ima45();" ondblclick="imag45();" src="images/Televisores/Kalley 32HDSFBT.png" width="230" height="250"><br>
@@ -1360,10 +1364,10 @@ Tipo de Pantalla LED
 Dimensiones (Ancho x Alto x Fondo) 73,2 x 47,9 x 17,8 cm (Ancho x Alto x Fondo) cm
 Medida Televisor sin base 73,2 x 43,1 x 8 cm (Ancho x Alto x Fondo) cms
 MEDIDA EN DIAGONAL 81 cms</p></details><br> <h1><center id="precio44">230</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car44();" id="mm">Agregar al carrito</button></center>
                 </td>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo45">
                     <h2><center id="condi45">*USADO</center></h2>
                     <center>Kalley K-LED32HDBT2<br><br>
                     <img id="imagen46" onclick="ima46();" ondblclick="imag46();" src="images/Televisores/Kalley K-LED32HDBT2.png" width="230" height="250"><br>
@@ -1380,9 +1384,9 @@ Resolución: HD
 Contraste: 1.200:1
 Entradas: 2HDMI. 2USB.
 Velocidad Respuesta: 60Hz</p></details><br> <h1><center id="precio45">170</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car45();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo46">
                     <h2><center id="condi46">*NUEVO</center></h2>
                     <center>Kalley K-LED40FHDSFBT<br><br>
                     <img id="imagen47" onclick="ima47();" ondblclick="imag47();" src="images/Televisores/Kalley K-LED40FHDSFBT.png" width="230" height="250"><br>
@@ -1404,9 +1408,9 @@ Sistema operativo Linux
 Tienda de aplicaciones app store
 Incluye PVR (grabador digital)
 Time Shift</p></details><br> <h1><center id="precio46">300</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car46();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo47">
                     <h2><center id="condi47">*NUEVO</center></h2>
                     <center>LG 28TL525S<br><br>
                     <img id="imagen48" onclick="ima48();" ondblclick="imag48();" src="images/Televisores/LG 28TL525S.png" width="230" height="250"><br>
@@ -1425,9 +1429,9 @@ Time Shift</p></details><br> <h1><center id="precio46">300</center></h1>
 *Sintonizador Digital DVB-T2: SI
 *Resolución: HD 1366 x 768
 *Dimensiones 64.1 X 5.7 X 39.6 (Ancho x Alto x Fondo) cms</p></details><br> <h1><center id="precio47">250</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car47();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo48">
                     <h2><center id="condi48">*NUEVO</center></h2>
                     <center>LG 43LM63000PDB<br><br>
                     <img id="imagen49" onclick="ima49();" ondblclick="imag49();" src="images/Televisores/LG 43LM63000PDB.png" width="230" height="250"><br>
@@ -1454,9 +1458,9 @@ Número de entradas (HDMI) 3.0
 Numero de entrada (USB) 2.0
 
 Entrada Red LAN Si</p></details><br> <h1><center id="precio48">370</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car48();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo49">
                     <h2><center id="condi49">*NUEVO</center></h2>
                     <center>Samsung 50RU7100<br><br>
                     <img id="imagen50" onclick="ima50();" ondblclick="imag50();" src="images/Televisores/Samsung 50RU7100.png" width="230" height="250"><br>
@@ -1475,12 +1479,12 @@ Curvo No
 HDR Sí
 USB Sí
 HDMI Sí</p></details><br> <h1><center id="precio49">520</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car49();" id="mm">Agregar al carrito</button></center>
                 </td>
             </tr>
             <th colspan="5">Consolas</th>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo50">
                     <h2><center id="condi50">*NUEVO</center></h2>
                     <center>Consola Xbox One S De 1t + 2 Controles. Garantia De 1 Año<br><br>
                     <img id="imagen51" onclick="ima51();" ondblclick="imag51();" src="images/Consolas/1.png" width="230" height="250"><br>
@@ -1501,9 +1505,9 @@ Sonido espacial
 Haz que tus juegos y películas cobren vida con el sonido envolvente Dolby Atmos y DTS:X.5
 Aplicaciones de entretenimiento interminables
 Disfruta de tus aplicaciones favoritas, como YouTube, Spotify y muchas más.</p></details><br> <h1><center id="precio50">550</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car50();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo51">
                     <h2><center id="condi51">*NUEVO</center></h2>
                     <center>Mini Consola Retro Clásica 620 Juegos En 1 Av 2 Controles<br><br>
                     <img id="imagen52" onclick="ima52();" ondblclick="imag52();" src="images/Consolas/4.png" width="230" height="250"><br>
@@ -1527,9 +1531,9 @@ Disfruta en familia y revive los mejores juegos de la época!!
 
 • Tamaño producto: 4.5 x 13 x 10 cm.
 • Peso Aprox. producto: 351 g.</p></details><br> <h1><center id="precio51">500</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car51();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo52">
                     <h2><center id="condi52">*NUEVO</center></h2>
                     <center>Consola Ps4 Slim De 1tb +3 Juegos +plus 3 Meses<br><br>
                     <img id="imagen53" onclick="ima53();" ondblclick="imag53();" src="images/Consolas/7.png" width="230" height="250"><br>
@@ -1547,9 +1551,9 @@ Género: Otros, Hardware
 Idioma: Textos en español y manual en español
 Lanzamiento: 16 de septiembre de 2016 (Pegi: +3)
 </p></details><br> <h1><center id="precio52">600</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car52();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo53">
                     <h2><center id="condi53">*NUEVO</center></h2>
                     <center>Consola Xbox One X De 1tb +juego + Control . Nueva Sellada<br><br>
                     <img id="imagen54" onclick="ima54();" ondblclick="imag54();" src="images/Consolas/10.png" width="230" height="250"><br>
@@ -1567,9 +1571,9 @@ Cable de poder
 1 juego para descarga digital
 Manuales y garantía
                     </p></details><br> <h1><center id="precio53">650</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car53();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo54">
                     <h2><center id="condi54">*NUEVO</center></h2>
                     <center>Ps4 Pro 1tb. Control, Cable Hdmi, 4k. Nueva Y Sellada.<br><br>
                     <img id="imagen55" onclick="ima55();" ondblclick="imag55();" src="images/Consolas/13.png" width="230" height="250"><br>
@@ -1587,10 +1591,10 @@ Definición: 4K/ HDR
 Capacidad: 1TB
 Garantía Del Producto: 1 año de garantía directamente con nosotros por Cualquier Defecto de Fábrica
 Envios: A nivel nacional por mercadoenvios (Costo Totalmente Gratis), o si lo prefieres por: Interrapidisimo, Deprisa ó Envia. (costo a cargo del comprador)</p></details><br> <h1><center id="precio54">650 </center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car54();" id="mm">Agregar al carrito</button></center>
                 </td>
             <tr>
-                <td id ="nuevo">
+                <td id ="nuevo55">
                     <h2><center id="condi55">*NUEVO</center></h2>
                     <center>Play Station 5 1TB - 2 juegos<br><br>
                     <img id="imagen56" onclick="ima56();" ondblclick="imag56();" src="images/Consolas/16.png" width="230" height="250"><br>
@@ -1612,9 +1616,9 @@ Manuales
 Codigo o Juego Promocional de Preventa.
 
 Garantia 12 Meses Sony America.</p></details><br> <h1><center id="precio55">700</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car55();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo56">
                     <h2><center id="condi56">*NUEVO</center></h2>
                     <center>Xbox 360 Slim 5.0 Disco 500 Gb 90j. Kinect 2 Controles + (Reacondicionado)<br><br>
                     <img id="imagen57" onclick="ima57();" ondblclick="imag57();" src="images/Consolas/19.png" width="230" height="250"><br>
@@ -1637,9 +1641,9 @@ Garantia 12 Meses Sony America.</p></details><br> <h1><center id="precio55">700<
 12.Disco duro de 500 gb con 90 regalos incluidos.
 13. servicio post venta
 14. grips para los controles</p></details><br> <h1><center id="precio56">300</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car56();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo57">
                     <h2><center id="condi57">*NUEVO</center></h2>
                     <center>Nintendo Switch Neon + Super Mario Odyssey Fisico + Estuche<br><br>
                     <img id="imagen58" onclick="ima58();" ondblclick="imag58();" src="images/Consolas/22.png" width="230" height="250"><br>
@@ -1657,9 +1661,9 @@ Género: Otros, Hardware
 Lanzamiento: 3 de marzo de 2017 (Pegi: +3)
 
 Descripción: Una consola de sobremesa y a la vez también portátil. Esta es la apuesta de la Gran N con Nintendo Switch, su nueva videoconsola, anteriormente conocida con el nombre en clave NX. ¿Cómo definirla? Es una máquina híbrida centrada en el juego tradicional en casa, pero capacitada para llevar toda esa experiencia a una pantalla más pequeña para disfrutar de los videojuegos dónde, cuándo y con quién quieras, igual que una consola portátil.</p></details><br> <h1><center id="precio57">650</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car57();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo58">
                     <h2><center id="condi58">*USADO</center></h2>
                     <center>Playstation 3 500gb Rf + 80 Juegos Digitales + Fifa 19 (Reacondicionado)<br><br>
                     <img id="imagen59" onclick="ima59();" ondblclick="imag59();" src="images/Consolas/25.png" width="230" height="250"><br>
@@ -1683,9 +1687,9 @@ Caja (embalaje completo)
 Cables (cable de energía + cable RCA (bananas) + cable cargador de control)
 Garantía de 1 año certificada
 La consola puede tener señales mínimas de uso*</p></details><br> <h1><center id="precio58">250</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car58();" id="mm">Agregar al carrito</button></center>
                 </td>
-                <td id ="nuevo">
+                <td id ="nuevo59">
                     <h2><center id="condi59">*USADO</center></h2>
                     <center>Play Station 2<br><br>
                     <img id="imagen60" onclick="ima60();" ondblclick="imag60();" src="images/Consolas/28.png" width="230" height="250"><br>
@@ -1706,7 +1710,7 @@ Seamos sinceros el sistema de 128-bit de PS2 a veces queda un poco atrás compar
 
 DVD
 Como dijimos antes el PS2 ya viene con DVD desde que lo sacas de la caja, pero aún cuando Sony tiene muy buenos reproductores caseros el PS2 no es tan bueno como uno de estos, la imagen esta bien pero no puedes hacer ajustes de imagen y los controles de reproducción son bastante básicos, si lo piensas usar como tu reproductor DVD por defecto te recomendamos usar un control remoto.</p></details><br> <h1><center id="precio59">100</center></h1>
-                    <center><button>Agregar al carrito</button></center>
+                    <center><button onclick="car59();" id="mm">Agregar al carrito</button></center>
                 </td>
             </tr>
             </tbody>
