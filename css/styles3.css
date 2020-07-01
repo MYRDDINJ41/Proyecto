@@ -1,0 +1,47 @@
+*{
+    background-color: #fffff;
+    font-family: 'Calibri'
+}
+
+
+td{
+    padding: 40px;
+
+}
+
+th{
+    background-color: #F9FF00;
+    font-family: arial;
+    font-size: 2em;
+
+}
+
+
+button{
+    background-color: #7FE0F0;
+    height: 100px
+    border: none;
+}
+
+tr{
+    border: black;
+
+}
+td{
+    border: none;
+}
+thead{
+    background-color: #FEFF00;
+}
+
+#section {
+position: relative;
+left: 750px;
+}
+
+#completado{
+    position: relative;
+    top: 165px;
+    right: 690px;
+    width: 150px;
+}

@@ -1,10 +1,9 @@
 function usad(){
 for(i=0; i<60; i++){
-    var preciobara = "preciobara"+i;
-    var porfin = preciobara;
-    var porfin = document.getElementById('condi'+i);
-    if(porfin.textContent == "*NUEVO"){
-        porfin.closest('#nuevo').remove();
+
+    var condi = document.getElementById('condi'+i);
+    if(condi.textContent == "*NUEVO"){
+        condi.closest('#nuevo'+i).remove();
     }
     
 } 
@@ -12,11 +11,9 @@ for(i=0; i<60; i++){
 
 function nuev(){
 for(i=0; i<60; i++){
-    var preciobara = "preciobara"+i;
-    var porfin = preciobara;
-    var porfin = document.getElementById('condi'+i);
-    if(porfin.textContent == "*USADO"){
-        porfin.closest('#nuevo').remove();
+    var condi = document.getElementById('condi'+i);
+    if(condi.textContent == "*USADO"){
+        condi.closest('#nuevo'+i).remove();
     }
     
 }
@@ -25,11 +22,10 @@ for(i=0; i<60; i++){
 
 function barato(){
 for(i=0; i<60; i++){
-    var preciobara = "preciobara"+i;
-    var porfin = preciobara;
-    var porfin = document.getElementById('precio'+i);
-    if(porfin.textContent>300){
-        porfin.closest('#nuevo').remove();
+
+    var precio = document.getElementById('precio'+i);
+    if(precio.textContent>300){
+        precio.closest('#nuevo'+i).remove();
     }
     
 }
@@ -37,11 +33,10 @@ for(i=0; i<60; i++){
 
 function medio(){
 for(i=0; i<60; i++){
-    var preciobara = "preciobara"+i;
-    var porfin = preciobara;
-    var porfin = document.getElementById('precio'+i);
-    if(porfin.textContent<300 || porfin.textContent>=600){
-        porfin.closest('#nuevo').remove();
+
+    var precio = document.getElementById('precio'+i);
+    if(precio.textContent<300 || precio.textContent>600){
+        precio.closest('#nuevo'+i).remove();
     }
     
 }
@@ -49,11 +44,10 @@ for(i=0; i<60; i++){
 
 function caro(){
 for(i=0; i<60; i++){
-    var preciobara = "preciobara"+i;
-    var porfin = preciobara;
-    var porfin = document.getElementById('precio'+i);
-    if(porfin.textContent<600){
-        porfin.closest('#nuevo').remove();
+
+    var precio = document.getElementById('precio'+i);
+    if(precio.textContent<600){
+        precio.closest('#nuevo'+i).remove();
     }
     
 }
@@ -61,12 +55,10 @@ for(i=0; i<60; i++){
 
 function bogota(){
 for(i=0; i<60; i++){
-    var preciobara = "preciobara"+i;
-    var porfin = preciobara;
-    console.log(porfin);
-    var porfin = document.getElementById('ciudad'+i);
-    if(porfin.textContent !== "Bogotá D.C"){
-        porfin.closest('#nuevo').remove();
+
+    var ciudad = document.getElementById('ciudad'+i);
+    if(ciudad.textContent !== "Bogotá D.C"){
+        ciudad.closest('#nuevo'+i).remove();
     }
     
 }
@@ -74,12 +66,10 @@ for(i=0; i<60; i++){
 
 function antioquia(){
 for(i=0; i<60; i++){
-    var preciobara = "preciobara"+i;
-    var porfin = preciobara;
-    console.log(porfin);
-    var porfin = document.getElementById('ciudad'+i);
-    if(porfin.textContent !== "Antioquia"){
-        porfin.closest('#nuevo').remove();
+
+    var ciudad = document.getElementById('ciudad'+i);
+    if(ciudad.textContent !== "Antioquia"){
+        ciudad.closest('#nuevo'+i).remove();
     }
     
 }
@@ -87,29 +77,528 @@ for(i=0; i<60; i++){
 
 function santander(){
 for(i=0; i<60; i++){
-    var preciobara = "preciobara"+i;
-    var porfin = preciobara;
-    console.log(porfin);
-    var porfin = document.getElementById('ciudad'+i);
-    if(porfin.textContent !== "Santander"){
-        porfin.closest('#nuevo').remove();
+
+    var ciudad = document.getElementById('ciudad'+i);
+    if(ciudad.textContent !== "Santander"){
+        ciudad.closest('#nuevo'+i).remove();
     }
     
 }
 }
 
-function car(){
-    var carrito = document.getElementById('carrito');
-    carrito = carrito + 1;
-    carrito.appendChild('carrito');
-    console.log(carrito);
+function car0(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo0").innerHTML;
+    sessionStorage.setItem('nuevo0',porfin);
+
+
+
 }
 
+function car1(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo1").innerHTML;
+    sessionStorage.setItem('nuevo1',porfin);
+
+
+
+}
+
+function car2(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo2").innerHTML;
+    sessionStorage.setItem('nuevo2',porfin);
+
+}
+
+function car3(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo3").innerHTML;
+    sessionStorage.setItem('nuevo3',porfin);
+
+
+
+}
+
+function car4(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo4").innerHTML;
+    sessionStorage.setItem('nuevo4',porfin);
+
+
+
+}
+
+function car5(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo5").innerHTML;
+    sessionStorage.setItem('nuevo5',porfin);
+
+
+
+}
+
+function car6(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo6").innerHTML;
+    sessionStorage.setItem('nuevo6',porfin);
+
+
+
+}
+
+function car7(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo7").innerHTML;
+    sessionStorage.setItem('nuevo7',porfin);
+
+
+
+}
+
+function car8(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo8").innerHTML;
+    sessionStorage.setItem('nuevo8',porfin);
+
+
+
+}
+
+function car9(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo9").innerHTML;
+    sessionStorage.setItem('nuevo9',porfin);
+
+
+
+}
+
+function car10(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo10").innerHTML;
+    sessionStorage.setItem('nuevo10',porfin);
+
+}
+
+function car11(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo11").innerHTML;
+    sessionStorage.setItem('nuevo11',porfin);
+
+}
+
+function car12(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo12").innerHTML;
+    sessionStorage.setItem('nuevo12',porfin);
+
+}
+
+function car13(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo13").innerHTML;
+    sessionStorage.setItem('nuevo13',porfin);
+
+}
+
+function car14(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo14").innerHTML;
+    sessionStorage.setItem('nuevo14',porfin);
+
+}
+
+function car15(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo15").innerHTML;
+    sessionStorage.setItem('nuevo15',porfin);
+
+}
+
+function car16(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo16").innerHTML;
+    sessionStorage.setItem('nuevo16',porfin);
+
+}
+
+function car17(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo17").innerHTML;
+    sessionStorage.setItem('nuevo17',porfin);
+
+}
+
+function car18(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo18").innerHTML;
+    sessionStorage.setItem('nuevo18',porfin);
+
+}
+
+function car19(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo19").innerHTML;
+    sessionStorage.setItem('nuevo19',porfin);
+
+}
+
+function car20(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo20").innerHTML;
+    sessionStorage.setItem('nuevo20',porfin);
+
+}
+
+function car21(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo21").innerHTML;
+    sessionStorage.setItem('nuevo21',porfin);
+
+}
+
+function car22(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo22").innerHTML;
+    sessionStorage.setItem('nuevo22',porfin);
+
+}
+
+function car23(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo23").innerHTML;
+    sessionStorage.setItem('nuevo23',porfin);
+
+}
+
+function car24(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo24").innerHTML;
+    sessionStorage.setItem('nuevo24',porfin);
+
+}
+
+function car25(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo25").innerHTML;
+    sessionStorage.setItem('nuevo25',porfin);
+
+}
+
+function car26(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo26").innerHTML;
+    sessionStorage.setItem('nuevo26',porfin);
+
+}
+
+function car27(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo27").innerHTML;
+    sessionStorage.setItem('nuevo27',porfin);
+
+}
+
+function car28(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo28").innerHTML;
+    sessionStorage.setItem('nuevo28',porfin);
+
+}
+
+function car29(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo29").innerHTML;
+    sessionStorage.setItem('nuevo29',porfin);
+
+}
+
+function car30(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo30").innerHTML;
+    sessionStorage.setItem('nuevo30',porfin);
+
+}
+
+function car31(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo31").innerHTML;
+    sessionStorage.setItem('nuevo31',porfin);
+
+}
+
+function car32(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo32").innerHTML;
+    sessionStorage.setItem('nuevo32',porfin);
+
+}
+
+function car33(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo33").innerHTML;
+    sessionStorage.setItem('nuevo33',porfin);
+
+}
+
+function car34(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo34").innerHTML;
+    sessionStorage.setItem('nuevo34',porfin);
+
+}
+
+function car35(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo35").innerHTML;
+    sessionStorage.setItem('nuevo35',porfin);
+
+}
+
+function car36(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo36").innerHTML;
+    sessionStorage.setItem('nuevo36',porfin);
+
+}
+
+function car37(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo37").innerHTML;
+    sessionStorage.setItem('nuevo37',porfin);
+
+}
+
+function car38(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo38").innerHTML;
+    sessionStorage.setItem('nuevo38',porfin);
+
+}
+
+function car39(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo39").innerHTML;
+    sessionStorage.setItem('nuevo39',porfin);
+
+}
+
+function car40(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo40").innerHTML;
+    sessionStorage.setItem('nuevo40',porfin);
+
+}
+
+function car41(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo41").innerHTML;
+    sessionStorage.setItem('nuevo41',porfin);
+
+}
+
+function car42(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo42").innerHTML;
+    sessionStorage.setItem('nuevo42',porfin);
+
+}
+
+function car43(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo43").innerHTML;
+    sessionStorage.setItem('nuevo43',porfin);
+
+}
+
+function car44(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo44").innerHTML;
+    sessionStorage.setItem('nuevo44',porfin);
+
+}
+
+function car45(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo45").innerHTML;
+    sessionStorage.setItem('nuevo45',porfin);
+
+}
+
+function car46(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo46").innerHTML;
+    sessionStorage.setItem('nuevo46',porfin);
+
+}
+
+function car47(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo47").innerHTML;
+    sessionStorage.setItem('nuevo47',porfin);
+
+}
+
+function car48(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo48").innerHTML;
+    sessionStorage.setItem('nuevo48',porfin);
+
+}
+
+function car49(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo49").innerHTML;
+    sessionStorage.setItem('nuevo49',porfin);
+
+}
+
+function car50(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo50").innerHTML;
+    sessionStorage.setItem('nuevo50',porfin);
+
+}
+
+function car51(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo51").innerHTML;
+    sessionStorage.setItem('nuevo51',porfin);
+
+}
+
+function car52(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo52").innerHTML;
+    sessionStorage.setItem('nuevo52',porfin);
+
+}
+
+function car53(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo53").innerHTML;
+    sessionStorage.setItem('nuevo53',porfin);
+
+}
+
+function car54(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo54").innerHTML;
+    sessionStorage.setItem('nuevo54',porfin);
+
+}
+
+function car55(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo55").innerHTML;
+    sessionStorage.setItem('nuevo55',porfin);
+
+}
+
+function car56(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo56").innerHTML;
+    sessionStorage.setItem('nuevo56',porfin);
+
+}
+
+function car57(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo57").innerHTML;
+    sessionStorage.setItem('nuevo57',porfin);
+
+}
+
+function car58(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo58").innerHTML;
+    sessionStorage.setItem('nuevo58',porfin);
+
+}
+
+function car59(){
+    var carr = document.getElementById("carrito").value = +document.getElementById("carrito").value+1;
+    console.log(carr);
+    var porfin = document.getElementById("nuevo59").innerHTML;
+    sessionStorage.setItem('nuevo59',porfin);
+
+}
+
+function pagar(){
+    location.href="index4.html";
+}
+
+function borrar(){
+    var carr = +document.getElementById("carrito").value;
+    carr = 0;
+    sessionStorage.clear();
+}
 
 
 
 function ima1(){
     var imad = document.getElementById("imagen")
+    imad.style.transition = ".8s all"
     imad.style.transform ='translate(550px, 250px)'+'scale(3.5)';
 
 }

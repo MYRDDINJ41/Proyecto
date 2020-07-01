@@ -44,6 +44,8 @@ ul{
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
+    border-radius: 1px;
+    box-shadow: 2px 2px 2px black;
 }
 
 .nav li a:hover{
@@ -102,6 +104,7 @@ th{
 
 button{
     background-color: #7FE0F0;
+    height: 100px
     border: none;
 }
 
@@ -116,4 +119,15 @@ td{
 }
 thead{
     background-color: #FEFF00;
+}
+
+#btn_pagar{
+     position: relative;
+     bottom: 60px;
+     left: 500px;
+     width: 100px;
+}
+
+img {
+    transition: .8s all;
 }

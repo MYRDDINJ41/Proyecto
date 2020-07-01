@@ -8,9 +8,11 @@ function getData2(){
     if(x3 == data){
         if(x4 == data2){
             alert("Datos correctos");
-            location.href="index.html";
+            location.href="index5.html";
         }else{
             alert("Datos incorrectos, por favor vuelva a ingresarlos");
         }
+    }else{
+        alert("Datos incorrectos, por favor vuelva a ingresarlos");
     }
 }
